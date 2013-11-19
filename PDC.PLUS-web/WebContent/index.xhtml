@@ -1,14 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ui="http://java.sun.com/jsf/facelets"
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core">
-
-<f:loadBundle basename="resources.application" var="msg"/>
-
- <h:head>
+    <h:head>
         <title><h:outputText value="#{msg.welcomeTitle}" /></title>
         <link type="text/css" rel="stylesheet" href="CSS/style.css" />
     </h:head>
@@ -19,7 +15,6 @@
         <div id="formcadastroDesc">Partilhe informacao com os teus amigos e colegas !!</div>
         <div id="formcadastroForm">
             <h:form>
-                 <fieldset>
                      <table align="left" border="0" cellspacing="0" cellpadding="3">
                          <tr>
                             <td>
@@ -30,9 +25,13 @@
                                 </select>
                             </td>
                          </tr>       
-                         <tr><td><h:inputText value="" size="50" /></td></tr>
-                     </table>
-                 </fieldset>
+                         <tr><td><h:inputText value="Nome de Usuario" /></td></tr>
+                         <tr><td><h:inputText value="Nome" /></td></tr>
+                         <tr><td><h:inputText value="Email" /></td></tr>
+                         <tr><td><h:inputText value="Pais" /></td></tr>
+                         <tr><td><h:inputText value="Cidade" /></td></tr>
+                         <tr><td><h:commandButton value="Registrar" styleClass="buttonR"></h:commandButton></td></tr>
+                     </table> 
             </h:form>
         </div>        
     </div>

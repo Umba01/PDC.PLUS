@@ -6,10 +6,8 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
-
+@import url('CSS/definicoes.css');
+@import url('CSS/definicoes_min.css');
 html, body, h1, h2, h3, h4, ul, li {
 	margin: 0;
 	padding: 0;
@@ -42,9 +40,30 @@ a:hover {
 body {
 	background-color: lightsteelblue;
 	text-align: center;
-	font: 12px Elvetica, arial, sans-serif;
+	font: 12px Helvetica, arial, sans-serif;
 	color: black;
 	padding-bottom: 10px;
 	padding-top: 31px;
 }
 
+#formcadastro {
+    padding-left: 400px;
+    top: 150px;
+    position: absolute;
+    margin: auto;
+}
+
+#formcadastroTdesc {
+    font: 60px Impact, sans-serif;
+    color: #f8f8ff;
+}
+
+#formcadastroDesc {
+    font : 20px Comic Sans MS;
+    color: #f8f8ff;
+}
+
+#formcadastroForm {
+    font : 12px bold Helvetica;
+    color: #f8f8ff;
+}

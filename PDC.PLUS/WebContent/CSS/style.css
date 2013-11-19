@@ -1,0 +1,50 @@
+/* 
+    Document   : style
+    Created on : Nov 19, 2013, 7:13:30 AM
+    Author     : Judith Umba
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+html, body, h1, h2, h3, h4, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	color: #464544;
+}
+a:hover {
+	color: #FFA405;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.more {
+	text-align: right;
+}
+.clear {
+	clear: both;
+}
+
+body {
+	background-color: lightsteelblue;
+	text-align: center;
+	font: 12px Elvetica, arial, sans-serif;
+	color: black;
+	padding-bottom: 10px;
+	padding-top: 31px;
+}
+

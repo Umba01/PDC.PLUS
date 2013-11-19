@@ -12,24 +12,27 @@
 <body>
     <div id="formcadastro">
         <div id="formcadastroTdesc">pdc.plus</div>
-        <div id="formcadastroDesc">Partilhe informacao com os teus amigos e colegas !!</div>
+        <div id="formcadastroDesc"><p>Partilhe informacao</p><p> com os teus amigos e colegas !!</p></div>
         <div id="formcadastroForm">
             <h:form>
-                     <table align="left" border="0" cellspacing="0" cellpadding="3">
-                         <tr>
-                            <td>
-                                <select name="major">
-                                    <option value="select">Escolha o seu tipo de usuario</option>
-                                    <option value="architecture">Individual</option>
-                                    <option value="english">Organizacional</option>
-                                </select>
-                            </td>
-                         </tr>       
-                         <tr><td><h:inputText value="Nome de Usuario" /></td></tr>
-                         <tr><td><h:inputText value="Nome" /></td></tr>
-                         <tr><td><h:inputText value="Email" /></td></tr>
-                         <tr><td><h:inputText value="Pais" /></td></tr>
-                         <tr><td><h:inputText value="Cidade" /></td></tr>
+                     <table align="left" border="0" cellspacing="0" cellpadding="3">  
+                         <div id="InfoSpaces">
+                                <tr>
+                                   <td>
+                                       <h:selectOneMenu value="TipoUsuario" >
+                                           <f:selectItem itemValue="nenhum" itemLabel="Escolha o seu tipo de usuario" />
+                                           <f:selectItem itemValue="indivual" itemLabel="Individual" />
+                                           <f:selectItem itemValue="organizacional" itemLabel="Organizacional" /> 
+                                       </h:selectOneMenu>
+                                   </td>
+                                </tr>       
+                                <tr><td><h:inputText id="username" value="Nome de Usuario" onfocus="if (this.value == 'Nome de Usuario') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome de Usuario';}"/></td></tr>
+                                <tr><td><h:inputText id="nome" value="Nome" onfocus="if (this.value == 'Nome') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome';}"/></td></tr>
+                                <tr><td><h:inputText id="email" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}"/></td></tr>
+                                <tr><td><h:inputSecret id="passowrd" value="Password" styleClass="secretT" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}"/></td></tr>
+                                <tr><td><h:inputText value="Pais" /></td></tr>
+                                <tr><td><h:inputText value="Cidade" /></td></tr>       
+                         </div>
                          <tr><td><h:commandButton value="Registrar" styleClass="buttonR"></h:commandButton></td></tr>
                      </table> 
             </h:form>

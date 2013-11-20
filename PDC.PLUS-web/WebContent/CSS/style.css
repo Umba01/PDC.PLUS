@@ -20,7 +20,7 @@ img {
 }
 a {
 	color: #464544;
-    font: 10px Helvetica, arial, sans-serif;
+        font: 10px Helvetica, arial, sans-serif;
 }
 a:hover {
 	color: red;
@@ -153,4 +153,9 @@ select {
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     font : 17px bold Helvetica;
+}
+
+#LinkLogin {
+    padding-top: 560px;
+    padding-right: 50px;
 }

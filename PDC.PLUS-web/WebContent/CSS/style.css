@@ -97,7 +97,7 @@ input[type="text"]
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    font : 12px bold Helvetica;
+    font : 17px bold Helvetica;
     
 }
 
@@ -141,7 +141,7 @@ select {
     -moz-appearance:none;
     appearance:none;
     cursor:pointer;
-    font : 12px bold Helvetica;
+    font : 17px bold Helvetica;
 }
 
 .buttonR {

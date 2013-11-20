@@ -20,9 +20,10 @@ img {
 }
 a {
 	color: #464544;
+    font: 10px Helvetica, arial, sans-serif;
 }
 a:hover {
-	color: #FFA405;
+	color: red;
 }
 .left {
 	float: left;

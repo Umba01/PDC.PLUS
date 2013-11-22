@@ -149,12 +149,6 @@ select {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     font : 17px bold Helvetica;
 }
-
-#LinkLogin {
-    padding-top: 535px;
-    padding-right: 80px;
-}
-
 .erro {
-    
+    color:red;
 }

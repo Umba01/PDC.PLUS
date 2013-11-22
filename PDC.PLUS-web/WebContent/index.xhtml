@@ -23,10 +23,14 @@
                         <f:selectItem itemValue="organizacional" itemLabel="Organizacional" /> 
                     </h:selectOneMenu>
              
-                    <h:inputText id="username" value="Nome de Usuario" onfocus="if (this.value == 'Nome de Usuario') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome de Usuario';}"/>
+                    <h:inputText id="username" value="NomedeUsuario" validatorMessage="Insira um nome de usuario valido" onfocus="if (this.value == 'NomedeUsuario') {this.value = '';}" onblur="if (this.value == '') {this.value = 'NomedeUsuario';}">
+                        <f:validateLength minimum="4" maximum="11"/>
+                    </h:inputText>
                     <h:message for="username" styleClass="erro"/>
                     
-                    <h:inputText id="nome" value="Nome" onfocus="if (this.value == 'Nome') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome';}"/>
+                    <h:inputText id="nome" value="Nome" validatorMessage="Insira um nome valido" onfocus="if (this.value == 'Nome') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome';}">
+                        <f:validateLength minimum="3" maximum="40"></f:validateLength>
+                    </h:inputText>
                     <h:message for="nome" styleClass="erro"/>
                     
                     <h:inputText id="email" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}"/>
@@ -35,20 +39,19 @@
                     <h:inputSecret id="passowrd" value="Password" styleClass="secretT" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}"/>
                     <h:message for="password" styleClass="erro"/>
                     
-                    <h:inputText value="Pais" onfocus="if (this.value == 'Pais') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pais';}"/>
+                    <h:inputText id="pais" value="Pais" onfocus="if (this.value == 'Pais') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pais';}"/>
                     <h:message for="pais" styleClass="erro"/>
                     
-                    <h:inputText value="Cidade" onfocus="if (this.value == 'Cidade') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Cidade';}"/>
+                    <h:inputText id="cidade" value="Cidade" onfocus="if (this.value == 'Cidade') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Cidade';}"/>
                     <h:message for="cidade" styleClass="erro"/>
                     
                 </h:panelGrid> 
                  <h:commandButton value="Registrar" styleClass="buttonR"></h:commandButton>
-                    
+                   
+                 <p><a href="login.xhtml"><b>Entrar</b> no PDC.PLUS</a></p>
             </h:form>
         </div>       
     </div>
-    <div id="LinkLogin">
-        <p><a href="login.xhtml"><b>Entrar</b> no PDC.PLUS</a></p>
-    </div>
 </body>
 </html>
+

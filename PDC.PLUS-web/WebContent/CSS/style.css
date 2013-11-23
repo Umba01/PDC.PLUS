@@ -51,26 +51,33 @@ body {
     padding-left: 460px;
     top: 90px;
     position: absolute;
-    margin: auto;
-    
-    
+    margin: auto;    
 }
 
-#formcadastroTdesc {
+#MainDescription {
     font: 60px Impact, sans-serif;
     color: #f8f8ff;
 }
 
-#formcadastroDesc {
+#MaindescMsg {
     font : 20px Comic Sans MS;
     color: #f8f8ff;
 }
 
-#formcadastroForm{
+#MainForm{
     font : 12px bold Helvetica;
     color: #f8f8ff;
     text-align: center;
     padding: 0 0 0 20px;
+}
+
+#formlogin {
+    
+    padding-left: 460px;
+    top: 90px;
+    position: absolute;
+    margin: auto;
+       
 }
 
 input[type="text"]

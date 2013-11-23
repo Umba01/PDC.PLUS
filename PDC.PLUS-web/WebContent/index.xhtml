@@ -7,13 +7,14 @@
     <h:head>
         <title><h:outputText value="#{msg.welcomeTitle}" /></title>
         <link type="text/css" rel="stylesheet" href="CSS/style.css" />
+        <script src="JavaScript/mainjs.js"></script>
     </h:head>
 
 <body>
     <div id="formcadastro">
-        <div id="formcadastroTdesc">pdc.plus</div>
-        <div id="formcadastroDesc"><p>Partilhe informacao</p><p> com os teus amigos e colegas !!</p></div>
-        <div id="formcadastroForm">
+        <div id="MainDescription">pdc.plus</div>
+        <div id="MaindescMsg"><p>Partilhe informacao</p><p> com os teus amigos e colegas !!</p></div>
+        <div id="MainForm">
             <h:form>
                 <h:panelGrid id="panel" columns="1" border="0" cellpadding="0" cellspacing="1">
                     
@@ -36,8 +37,8 @@
                     <h:inputText id="email" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}"/>
                     <h:message for="email" styleClass="erro"/>
                     
-                    <h:inputSecret id="passowrd" value="Password" styleClass="secretT" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}"/>
-                    <h:message for="password" styleClass="erro"/>
+                     <h:inputSecret id="pass" value="Password" styleClass="secretT" onfocus="javascript:focusCheckDefaultValue(this, 'pass', 'Password');" onblur="javascript:blurCheckDefaultValue(this, 'pass', 'Password');"/>                
+                    <h:message for="pass" styleClass="erro"/>
                     
                     <h:inputText id="pais" value="Pais" onfocus="if (this.value == 'Pais') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pais';}"/>
                     <h:message for="pais" styleClass="erro"/>
@@ -48,10 +49,9 @@
                 </h:panelGrid> 
                  <h:commandButton value="Registrar" styleClass="buttonR"></h:commandButton>
                    
-                 <p><a href="login.xhtml"><b>Entrar</b> no PDC.PLUS</a></p>
+                 <p><a href="faces/login.xhtml"><b>Entrar</b> no PDC.PLUS</a></p>
             </h:form>
         </div>       
     </div>
 </body>
 </html>
-

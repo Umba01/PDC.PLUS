@@ -6,7 +6,7 @@
 
     $(document).ready(function()
     {
-        var passfield = document.getElementById('password_field_id');
+        var passfield = document.getElementById('pass');
         passfield.type = 'text';
     });
 
@@ -38,5 +38,5 @@
                 field.type = 'password';
         }
     }
-           
+
        

@@ -194,6 +194,7 @@ select {
     height: 40px;
     width: 200px;
     margin-top: 10px;
+    margin-right: 35px;
     color: #f8f8ff;;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);

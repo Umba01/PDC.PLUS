@@ -51,33 +51,6 @@ body {
 	padding-top: 31px;
 }
 
-#formcadastro {
-    left: 440px;
-    top: 90px;
-    position: absolute;
-    margin: auto; 
-    background: #0e90d2;
-    width: 330px;
-    padding: 20px 20px 20px 20px;
-}
-
-#MainDescription {
-    font: 60px Impact, sans-serif;
-    color: black;
-}
-
-#MaindescMsg {
-    font : 20px Comic Sans MS;
-    color: black;
-}
-
-#MainForm{
-    font : 12px bold Helvetica;
-    color: black;
-    text-align: center;
-    padding-left: 40px;
-}
-
 #formlogin {
     
     padding-left: 460px;
@@ -91,8 +64,7 @@ body {
     left: 250px;
     top: 190px;
     position: absolute;
-    margin: auto;
-   
+    margin: auto;   
 }
 
 #menuopcoes {
@@ -195,7 +167,7 @@ select {
     width: 200px;
     margin-top: 10px;
     margin-right: 35px;
-    color: #f8f8ff;;
+    color: black;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     font : 17px bold Helvetica;

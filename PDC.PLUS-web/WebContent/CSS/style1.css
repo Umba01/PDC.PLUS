@@ -1,0 +1,181 @@
+/* 
+    Document   : style
+    Created on : Nov 19, 2013, 7:13:30 AM
+    Author     : Judith Umba
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url('CSS/definicoes.css');
+@import url('CSS/definicoes_min.css');
+html, body, h1, h2, h3, h4, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	color: #464544;
+        font: 10px Helvetica, arial, sans-serif;
+}
+a:hover {
+	color: red;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.more {
+	text-align: right;
+}
+.clear {
+	clear: both;
+}
+
+ul li{
+  display: inline-table;
+}
+
+body {
+	background-color: #0e90d2;
+	text-align: center;
+	font: 12px Helvetica, arial, sans-serif;
+	color: black;
+	padding-bottom: 10px;
+	padding-top: 31px;
+}
+
+#formcadastro {
+    left: 440px;
+    top: 90px;
+    position: absolute;
+    margin: auto; 
+    background: #0e90d2;
+    width: 330px;
+    padding: 20px 20px 20px 20px;
+}
+
+#MainDescription {
+    font: 60px Impact, sans-serif;
+    color: #f8f8ff;
+}
+
+#MaindescMsg {
+    font : 20px Comic Sans MS;
+    color: #f8f8ff;
+}
+
+#MainForm{
+    font : 12px bold Helvetica;
+    color: black;
+    text-align: center;
+    padding-left: 40px;
+}
+
+#ImagemPrincipal {
+    top: 120px;
+    left: 100px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    font: 14px Helvetica, arial, sans-serif;
+    color:  #f8f8ff;
+    text-align: justify;
+}
+
+.imagemP {
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    
+}
+
+input[type="text"]
+{
+    width:250px;
+    height: 30px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    font : 17px bold Helvetica;
+    
+}
+
+.secretT {
+    width:250px;
+    height: 30px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    
+}
+
+select {
+    width: 250px;
+    padding:9px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    font : 17px bold Helvetica;
+}
+
+.buttonR {
+    background: rgb(66, 184, 221); /* this is a light blue */
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 35px;
+    color: #f8f8ff;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px black;
+    font : 17px bold Helvetica;
+}
+.erro {
+    color:red;
+}

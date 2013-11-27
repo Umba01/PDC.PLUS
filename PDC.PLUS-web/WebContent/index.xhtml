@@ -6,17 +6,23 @@
     xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
         <title><h:outputText value="#{msg.welcomeTitle}" /></title>
-        <link type="text/css" rel="stylesheet" href="CSS/style.css" />
+        <link type="text/css" rel="stylesheet" href="CSS/style1.css" />
         <script src="JavaScript/mainjs.js"></script>
     </h:head>
 
-<body>
+    <body>
+    <div id="ImagemPrincipal">
+        <img src="Imagens/imagemprincipal.jpg" class="imagemP"/>
+        <p>PDC.PLUS e uma rede social que permite a troca de informacao
+           como conteudos e notais textuais, permite tambem...</p>
+    </div>
     <div id="formcadastro">
+        
         <div id="MainDescription">pdc.plus</div>
         <div id="MaindescMsg"><p>Partilhe informacao</p><p> com os teus amigos e colegas !!</p></div>
         <div id="MainForm">
             <h:form>
-                <h:panelGrid id="panel" columns="1" border="0" cellpadding="0" cellspacing="1">
+                <h:panelGrid id="panel" columns="1" border="0" cellpadding="0" cellspacing="3">
                     
                     <h:selectOneMenu value="TipoUsuario" >
                         <f:selectItem itemValue="nenhum" itemLabel="Escolha o seu tipo de usuario" />

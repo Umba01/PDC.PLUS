@@ -43,7 +43,7 @@ ul li{
 }
 
 body {
-	background-color: lightsteelblue;
+	background-color: #f8f8ff;
 	text-align: center;
 	font: 12px Helvetica, arial, sans-serif;
 	color: black;
@@ -52,27 +52,30 @@ body {
 }
 
 #formcadastro {
-    padding-left: 460px;
+    left: 440px;
     top: 90px;
     position: absolute;
-    margin: auto;    
+    margin: auto; 
+    background: #0e90d2;
+    width: 330px;
+    padding: 20px 20px 20px 20px;
 }
 
 #MainDescription {
     font: 60px Impact, sans-serif;
-    color: #f8f8ff;
+    color: black;
 }
 
 #MaindescMsg {
     font : 20px Comic Sans MS;
-    color: #f8f8ff;
+    color: black;
 }
 
 #MainForm{
     font : 12px bold Helvetica;
-    color: #f8f8ff;
+    color: black;
     text-align: center;
-    padding: 0 0 0 20px;
+    padding-left: 40px;
 }
 
 #formlogin {
@@ -128,9 +131,9 @@ input[type="text"]
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -webkit-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
     background: #f8f8f8;
     color:#888;
     border:none;
@@ -150,9 +153,9 @@ input[type="text"]
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -webkit-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
     background: #f8f8f8;
     color:#888;
     border:none;
@@ -171,9 +174,9 @@ select {
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -webkit-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px #ccc, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
     background: #f8f8f8;
     color:#888;
     border:none;

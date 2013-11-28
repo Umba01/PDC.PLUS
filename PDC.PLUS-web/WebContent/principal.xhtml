@@ -11,61 +11,59 @@
         <script src="JavaScript/yetii.js"></script>
     </h:head>
     <body>
-        
-        <div id="mainnome">pcd.plus</div>
-        <div id="menuopcoes">
-             <div id="agenteInfo">
-                <h:panelGrid id="panel" columns="1" border="0" cellpadding="3" cellspacing="0">
-                    <p><b>Judith Domingos Umba</b></p>
-                    <p><b>Numero de publicacoes #</b></p>   
-                    <p><b>Numero de seguidores #</b></p>   
-                    <p><b>Pontuou # Postes</b></p>   
-                    <p><b>Pagamento</b></p>   
-                </h:panelGrid>              
-             </div>
-            
+        <div id="menuTop">
             <ul id="tab-container-1-nav">
-                    <li><a href="#tab1"><img src="Imagens/Icones/home-icon.jpg" class="icone" /></a></li>
-                    <li><a href="#tab2"><img src="Imagens/Icones/definicoes.jpg" class="icone" /></a></li>
-                    <li><a href="#tab3"><img src="Imagens/Icones/sair.png" class="icone" /></a></li>
+                <li><a href="#tab1"><b>Home</b></a></li>|
+                <li><a href="#tab2"><b>Definicoes</b></a></li>|
+                <li><a href="#tab3"><b>Sair</b></a></li>
             </ul>     
         </div>
+        <div id="mainnome">pcd.plus</div>
+       
+        <div id="agenteInfo">
+            <h:panelGrid id="panel" columns="1" border="0" cellpadding="3" cellspacing="0">
+                <p><b>Judith Domingos Umba</b></p>
+                <p><b>Numero de publicacoes #</b></p>   
+                <p><b>Numero de seguidores #</b></p>   
+                <p><b>Pontuou # Postes</b></p>   
+                <p><b>Pagamento</b></p>   
+            </h:panelGrid>              
+        </div>
+      
         <div id="mainspace">
-                               
+
             <div id="tab-container-1">
-                    
+
                     <div class="tab" id="tab1">
-                        
+
                         <div id="AvatarPrincipal">
-                            
+
                         </div>
-                        
+
                         <div id="menuprincipal">
-                          
-                            <h:panelGrid id="panel" columns="6" border="0" cellpadding="3" cellspacing="5">
+
+                            <ul class="menu" rel="sam1">
+                                <li><a href="#">Perfil</a></li>
+                                <li><a href="#">Nota Textual</a></li>
+                                <li><a href="#">Conteudo</a></li>
+                                <li><a href="#">Pagamentos</a></li>
+                                <li><a href="#">Definicoes</a></li>
                                 
-                                    <h:column><a href="#"><img src="Imagens/perfil.jpg" class="iconemenuP"/></a></h:column>
-                                    <h:column><a href="#"><img src="Imagens/notatextual.png" class="iconemenuP"/></a></h:column>
-                                    <h:column><a href="#"><img src="Imagens/conteudo.png" class="iconemenuP"/></a></h:column>
-                                    <h:column><a href="#"><img src="Imagens/servicos.png" class="iconemenuP"/></a></h:column>
-                                    <h:column><a href="#"><img src="Imagens/perfil.jpg" class="iconemenuP"/></a></h:column>
-                                    <h:column><a href="#"><img src="Imagens/perfil.jpg" class="iconemenuP"/></a></h:column>
-                               
-                            </h:panelGrid>   
-                                
-                            
-                       </div>   
-                    </div>
+                            </ul>
+
+                        </div>
 
                     <div class="tab" id="tab2">
-                      
+
                         <p>It was popularised in the 1960s with 
                         the release of Letraset sheets.</p>
                     </div>
-                    
+
                     <div class="tab" id="tab3">
                     </div>
             </div>
+        </div>
+
         </div>
         <script type="text/javascript">
             var tabber1 = new Yetii({

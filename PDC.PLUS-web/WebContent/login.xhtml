@@ -14,24 +14,27 @@
         <div id="formlogin">
             <div id="MainDescription">pdc.plus</div>
             <div id="MaindescMsg"><p>Entre e partilhe informacao!</p></div>
-            <div id="MainForm">
+           
                 <h:form>
                     <h:message for="" styleClass="erro"/>
-                    <h:panelGrid id="panel" columns="1" border="0" cellpadding="0" cellspacing="1">
+                    <h:panelGrid id="panel" columns="1" border="0" cellpadding="0" cellspacing="3">
                         
                         <h:inputText id="username" value="Nome de Usuario ou Email" onfocus="javascript:focusCheckDefaultValue(this, '', 'Nome de Usuario ou Email');" onblur="javascript:blurCheckDefaultValue(this, '', 'Nome de Usuario ou Email');">                                             
                         </h:inputText>                       
                     
-                        <h:inputSecret value="Password" id="pass" styleClass="secretT" onfocus="javascript:focusCheckDefaultValue(this, 'pass', 'Password');" onblur="javascript:blurCheckDefaultValue(this, 'pass', 'Password');"/>                
-                 
+                        <h:inputSecret value="Password" id="pass" styleClass="secretT" onfocus="javascript:focusCheckDefaultValue(this, 'pass', 'Password');" onblur="javascript:blurCheckDefaultValue(this, 'pass', 'Password');"> 
+                        </h:inputSecret>                
+                        
+                       
+                        <h:selectBooleanCheckbox value=""><b>Lembra-Me</b></h:selectBooleanCheckbox>
                     </h:panelGrid>
                     
-                    <h:commandButton value="Entrar" styleClass="buttonR"></h:commandButton>
+                    <h:commandButton value="Entrar" action="faces/principal.xhtml" styleClass="buttonE"></h:commandButton>
                     
+                    <p><a href="faces/principal.xhtml"><b>Esqueceu a Password ?</b></a></p>
                 </h:form>
-            </div>
+            
         </div>
     </body>
 </html>
-
 

@@ -39,7 +39,7 @@ a:hover {
 }
 
 ul li{
-  display: initial;
+  display: inline;
 }
 
 body {
@@ -295,7 +295,7 @@ ul.menu li {
     float:left;
     height: 79px;
     text-align: center;
-    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)));
     background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
     
 }
@@ -309,8 +309,8 @@ ul.menu li a {
     border-right: 1px solid rgba(0,0,0,0.1);
     text-align: center;
     line-height: 79px;
-    background : -webkit-gradient(linear, left top, left bottom, from(rgb(70,130,180)), to(rgb(80,80,80)));;
-    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+    background : #464646;
+    background : #464646;
     -webkit-transition-property: background;
     -webkit-transition-duration: 700ms;
     -moz-transition-property: background;

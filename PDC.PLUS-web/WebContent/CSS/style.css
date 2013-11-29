@@ -6,8 +6,6 @@
         Purpose of the stylesheet follows.
 */
 
-@import url('CSS/definicoes.css');
-@import url('CSS/definicoes_min.css');
 html, body, h1, h2, h3, h4, ul, li {
 	margin: 0;
 	padding: 0;
@@ -103,7 +101,7 @@ body {
 #menuTop {
     position: absolute;
     top: 0px;
-    left: 900px;
+    left: 880px;
 }
 
 #MainDescription {
@@ -217,24 +215,24 @@ select {
      -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
     
 }
 
 #menuprincipal {
     
     left:100px;
-    width: 487px;
-    background: #4bb1cf;
+    width: 493px;
+    background: #f8f8f8;
     position: absolute;
      -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 2px 3px 2px black, 0 -1px black inset;
-    -moz-box-shadow: 2px 3px 2px black, 0 -1px black inset;
-    box-shadow: 2px 3px 2px black, 0 -1px black inset;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
 }
 
 .iconemenuP {
@@ -258,70 +256,78 @@ select {
      -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow: 2px 3px 2px black, 0 -1px black inset;
-    -moz-box-shadow: 2px 3px 2px black, 0 -1px black inset;
-    box-shadow: 2px 3px 2px black, 0 -1px black inset;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
     text-align: justify;
 }
 
 .wrapper {
-    width: 100%;
-    height: 80px;
-    background : #464646;
-    background : #4bb1cf;
-    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
-    border-top: 2px solid #939393;
     position: relative;
-    margin-bottom: 30px;
-    
-    
+      
 }
 
 ul {
-    margin: 0;
+    margin: 3px;
     padding: 0;
 }
  
-.ul.menu {
-    height: 80px;
-    border-left: 1px solid rgba(0,0,0,0.3);
-    border-right: 1px solid rgba(255,255,255,0.3);
-    float:left;
-    
-}
- 
-ul.menu li {
-    list-style: none;
-    float:left;
-    height: 79px;
+li{
+    display:inline;
+    list-type:none;
+    padding: 3px;
     text-align: center;
-    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)));
-    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
-    
 }
- 
-ul.menu li a {
-    font: 12px Comic Sans MS, arial, sans-serif;
-    color: #f8f8ff;
-    display: block;
-    padding: 0 20px;
-    border-left: 1px solid rgba(255,255,255,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);
-    text-align: center;
-    line-height: 79px;
-    background : #464646;
-    background : #464646;
-    -webkit-transition-property: background;
-    -webkit-transition-duration: 700ms;
-    -moz-transition-property: background;
-    -moz-transition-duration: 700ms;
+
+a.glidebutton{
+    display: inline-block;
+    position: relative;
+    color: black; /* default color */
+    background: #4bb1cf;
+    font: bold 14px Trebuchet MS; /* font settings */
+    text-decoration: none;
+    overflow: hidden;
+    height: 60px;
+    width: 80px;
+
+    -webkit-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    -moz-box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    box-shadow: 2px 3px 2px 2px black, 0 -1px black inset;
+    border-radius: 10px; /* border radius */
+    -moz-transition: all 0.3s ease-in-out; /* Enable CSS transition between property changes */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
- 
-ul li a:hover {
-    background: transparent none;
+
+
+a.glidebutton > span:first-child:after{ /* CSS generated content */
+content: attr(data-text); /* Duplicate text of span markup */
+display: block;
+width: 100%;
+height: 100%;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: inherit;
+position: absolute;
+top:100%;
+left:0;
 }
- 
-ul li.active a{
-    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
-    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+
+a.glidebutton:hover{
+color: black; /* color of button on hover */
+background: #bd362f; /* bg color of button on hover */
+box-shadow: 0 0 4px green inset;
+-webkit-box-shadow: 0 0 2px black, 2px 3px 2px 2px black inset;
+    -moz-box-shadow: 0 0 2px black, 2px 3px 2px 2px black inset;
+    box-shadow: 0 0 2px black, 2px 3px 2px 2px black inset;
+}
+
+a.glidebutton:hover > span:first-child{
+-moz-transform: translateY(-100%);
+-webkit-transform: translateY(-100%);
+-ms-transform: translateY(-100%);
+-o-transform: translateY(-100%);
+transform: translateY(-100%);
 }

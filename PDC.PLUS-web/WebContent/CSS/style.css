@@ -60,6 +60,9 @@ body {
     top: 90px;
     position: absolute;
     margin: auto;
+     -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
       
 }
 
@@ -114,7 +117,7 @@ body {
     color: #f8f8ff;
 }
 
-input[type="text"]
+.textLogin
 {
     width:250px;
     height: 30px;
@@ -330,4 +333,103 @@ a.glidebutton:hover > span:first-child{
 -ms-transform: translateY(-100%);
 -o-transform: translateY(-100%);
 transform: translateY(-100%);
+}
+
+#PostPrincipal {
+    
+    text-align: justify;
+     left:100px;
+     top: 80px;
+    width: 487px;  
+    background: #4bb1cf;
+    color: black;
+    position: absolute;
+     -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    padding: 5px 5px 5px 5px;
+     font : 12px bold Helvetica;
+     padding: 1px 4px 8px 4px;
+}
+
+.Post {   
+    color: black;
+    font : 12px bold Helvetica;
+    width: 478px;
+    background: #f8f8ff;
+    padding: 4px 4px 4px 4px;
+     -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    text-align: justify;
+}
+
+.Comentario {   
+    color: black;
+    font : 12px bold Helvetica;
+    width: 478px;
+    background: #f8f8ff;
+    padding: 4px 4px 4px 4px;
+     -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    text-align: justify;
+}
+
+.Comentar 
+{
+    width: 480px;
+    height: 25px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    background: #f8f8f8;
+    color:black;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    font : 12px bold Helvetica;
+    padding-left: 5px;
+    
+}
+
+.Pontuacao {   
+    color: black;
+    font : 12px bold Helvetica;
+    width: 80px;
+    background: #f8f8ff;
+    padding: 4px 4px 4px 4px;
+    
+     -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    -moz-box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    box-shadow: 2px 3px 2px black, 1px 1px black inset;
+    text-align: left;
+}
+
+.userpostinfo {   
+    color: black;
+    font : 12px bold Helvetica;
+    width: 80px;
+    background: #4bb1cf;
+    padding: 4px 4px 4px 4px;
+    text-align: left;
 }

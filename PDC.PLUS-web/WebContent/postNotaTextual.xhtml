@@ -43,44 +43,37 @@
                         <div id="menuprincipal">
 
                             <ul class="menu" rel="sam1">
-                                
+                            
                                 <li><a href="faces/principal.xhtml" class="glidebutton"><img src="Imagens/home.jpg"/></a></li>
                                 <li><a href="#" class="glidebutton"><img src="Imagens/perfil.jpg"/></a></li>
                                 <li><a href="faces/postNotaTextual.xhtml" class="glidebutton"><img src="Imagens/notatextual.jpg"/></a></li>
                                 <li><a href="faces/postarConteudo.xhtml" class="glidebutton"><img src="Imagens/conteudo.jpg"/></a></li>
                                 <li><a href="#" class="glidebutton"><img src="Imagens/pagamentos.jpg"/></a></li>
                                 <li><a href="#" class="glidebutton"><img src="Imagens/definicoes.jpg"/></a></li>
-                                
+                                    
                             </ul>
 
                         </div>
                          
                         <div id="PostPrincipal">
-                            
-                            <p class="userpostinfo"><b>Judithee</b></p>
-                            <p class="Post">
-                                New York's Cardinal Timothy Dolan says the Roman Catholic Church has been "outmarketed" on the issue of gay marriage and has been "caricatured as being anti-gay."
-
-Dolan discussed the church's positions opposing same-sex marriage and abortion in an interview with "Meet the Press" moderator David Gregory that will air Sunday on NBC.
-
-Gregory noted that Illinois just became the latest U.S. state to legalize gay marriage and asked, "Regardless of the church teachings, do you think this is evolving in such a way that it's ultimately going to be legal everywhere?"
-                            </p>
-                            
-                            <p class="Pontuacao">Pontuacao</p>
-                           
-                            <p class="Comentario">
-                                <b>Judithee</b>
-                                New York's Cardinal Timothy Dolan says the Roman Catholic Church has been "outmarketed" on the issue of gay marriage and has been "caricatured as being anti-gay."
-</p>
-                            
-                            <p class="Comentario"><b>Crissana</b> comentario</p>
-                            
-                            <p class="Comentario"><b>Tircia</b> comentario</p>
-                            
-                             <h:form>
-                                 <h:inputText id="comentario" value="comente" class="Comentar" onfocus="javascript:focusCheckDefaultValue(this, '', 'comente');" onblur="javascript:blurCheckDefaultValue(this, '', 'comente');">                                             
-                                </h:inputText> 
-                             </h:form>
+                            <p class="TituloPost"><b>Nota Textual</b></p>
+                            <h:form>
+                                <h:inputText id="comentario" value="Titulo" class="Comentar" onfocus="javascript:focusCheckDefaultValue(this, '', 'Titulo');" onblur="javascript:blurCheckDefaultValue(this, '', 'Titulo');">                                             
+                                </h:inputText>
+                                <p><h:inputTextarea id="descricao" value="Nota" required="true"  class="notatextualDescricao" onfocus="javascript:focusCheckDefaultValue(this, '', 'Nota');" onblur="javascript:blurCheckDefaultValue(this, '', 'Nota');">                                             
+                                </h:inputTextarea></p>
+                                <p class="permissoesLayout">
+                                     <h:selectOneMenu value="permissoes" >
+                                        <f:selectItem itemValue="geral" itemLabel="Geral" /> 
+                                        <f:selectItem itemValue="protegida" itemLabel="Protegida" />
+                                        
+                                    </h:selectOneMenu>
+                                </p>
+                                <p>
+                                    <h:commandButton value="Postar" action="principal.xhtml" styleClass="buttonPostar"></h:commandButton>
+                    
+                                </p>
+                            </h:form>
                         </div>
                         
                         

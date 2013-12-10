@@ -23,11 +23,13 @@
         <div id="agenteInfo">
             <h:panelGrid id="panel" columns="1" border="0" cellpadding="3" cellspacing="0">
                 <p><b>Judith Domingos Umba</b></p>
+                <p><b>Angola, Luanda</b></p> 
+                <p><b>Email </b></p>   
                 <p><b>Numero de publicacoes #</b></p>   
                 <p><b>Numero de seguidores #</b></p>   
                 <p><b>Pontuou # Postes</b></p>   
-                <p><b>Pagamento</b></p>   
-            </h:panelGrid>              
+                <p><a href=""><b>Seguir</b></a></p>   
+          </h:panelGrid>              
         </div>
       
         <div id="mainspace">
@@ -55,27 +57,34 @@
 
                         </div>
                          
-                        <div id="PostPrincipal">
-                            <p class="TituloPost"><b>Nota Textual</b></p>
-                            <h:form>
-                                <h:inputText id="comentario" value="Titulo" class="Comentar" onfocus="javascript:focusCheckDefaultValue(this, '', 'Titulo');" onblur="javascript:blurCheckDefaultValue(this, '', 'Titulo');">                                             
-                                </h:inputText>
-                                <p><h:inputTextarea id="descricao" value="Nota" required="true"  class="notatextualDescricao" onfocus="javascript:focusCheckDefaultValue(this, '', 'Nota');" onblur="javascript:blurCheckDefaultValue(this, '', 'Nota');">                                             
-                                </h:inputTextarea></p>
-                                <p class="permissoesLayout">
-                                     <h:selectOneMenu value="permissoes" >
-                                        <f:selectItem itemValue="geral" itemLabel="Geral" /> 
-                                        <f:selectItem itemValue="protegida" itemLabel="Protegida" />
-                                        
-                                    </h:selectOneMenu>
-                                </p>
-                                <p>
-                                    <h:commandButton value="Postar" action="principal.xhtml" styleClass="buttonPostar"></h:commandButton>
-                    
-                                </p>
-                            </h:form>
+                         <div id="PostPrincipal">
+                            
+                            <p class="userpostinfo"><b>Judithee</b></p>
+                            <p class="Post">
+                                New York's Cardinal Timothy Dolan says the Roman Catholic Church has been "outmarketed" on the issue of gay marriage and has been "caricatured as being anti-gay."
+
+Dolan discussed the church's positions opposing same-sex marriage and abortion in an interview with "Meet the Press" moderator David Gregory that will air Sunday on NBC.
+
+Gregory noted that Illinois just became the latest U.S. state to legalize gay marriage and asked.
+                            </p>
+                            
+                            <p class="Pontuacao">Pontuacao</p>
+                            <hr></hr>
+                            <p class="Comentario">
+                                <b>Judithee</b>
+                                New York's Cardinal Timothy Dolan says the Roman Catholic Church has been "outmarketed" on the issue of gay marriage and has been "caricatured as being anti-gay."
+</p>
+                            
+                            <p class="Comentario"><b>Crissana</b> comentario</p>
+                            
+                            <p class="Comentario"><b>Tircia</b> comentario</p>
+                            
+                             <h:form>
+                                 <h:inputText id="comentario" value="comente" class="Comentar" onfocus="javascript:focusCheckDefaultValue(this, '', 'comente');" onblur="javascript:blurCheckDefaultValue(this, '', 'comente');">                                             
+                                </h:inputText> 
+                             </h:form>
                         </div>
-                        
+                       
                         
                         
                     <div class="tab" id="tab2">
